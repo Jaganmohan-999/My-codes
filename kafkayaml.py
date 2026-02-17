@@ -40,7 +40,7 @@ def generate_yaml(base_rtsp, channels,
 if __name__ == "__main__":
 
     # Example input
-    base_rtsp = "rtsp://SIKTPJ:ktpjew@5202@183.82.99.50:1800/Streaming/Channels/{}"
+    base_rtsp = "{}"
 
     channels = [
     101,
