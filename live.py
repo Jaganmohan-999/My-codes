@@ -1,7 +1,7 @@
 import cv2
 
 # Replace with your RTSP URL
-RTSP_URL = "rtsp://admin:paramount%40123@192.168.0.31:554/Streaming/Channels/101"
+RTSP_URL = "rtsp://SIMGJ:mgjew@654321@183.82.114.243:1800/Streaming/Channels/801"
 
 cap = cv2.VideoCapture(RTSP_URL)
 
