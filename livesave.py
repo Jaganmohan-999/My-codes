@@ -19,33 +19,139 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 STREAMS = [
     {
-        "username": "SIRMJ",
-        "password": "sirm@654321",
-        "ip": "106.51.5.131",
-        "port": "1800",
-        "channels": [1001]
-    },
-    {
-        "username": "RSKPJ",
-        "password": "rskp@2024",
-        "ip": "183.82.99.76",
-        "port": "1810",
-        "channels": [101, 301]
-    },
-    {
-        "username": "SIGBJ",
-        "password": "sigb@2024",  # special characters handled safely
-        "ip": "183.82.113.163",
-        "port": "1810",
-        "channels": [101]
-    },
-    {
-        "username": "SIHKJ",
-        "password": "sihk@654321",  # special characters handled safely
-        "ip": "183.82.111.79",
-        "port": "1800",
-        "channels": [401, 301]
-    }
+    "username": "SIPTJ",    #SI Patny
+    "password": "sipt@654321",
+    "ip": "183.82.98.202",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIKTPJ",   #SI Kothapet
+    "password": "ktpjew@5202",
+    "ip": "183.82.99.50",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIKTPJ",   #SI Kothapet
+    "password": "ktpjew@5202",
+    "ip": "183.82.99.50",
+    "port": "1810",
+    "channels": [101]
+},
+{
+    "username": "SIMGJ",    #SI Madinaguda
+    "password": "mgjew@654321",
+    "ip": "183.82.114.243",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "RSDNJ",    #RS Dilsukhnagar
+    "password": "rsdn@654321",
+    "ip": "183.82.99.55",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "RSCNJ",    #RS Chandanagar
+    "password": "rscn@2024",
+    "ip": "183.82.99.77",
+    "port": "1810",
+    "channels": [101]
+},
+{
+    "username": "RSKPJ",    #RS Kukatpally
+    "password": "rskp@2024",
+    "ip": "183.82.99.76",
+    "port": "1810",
+    "channels": [101]
+},
+{
+    "username": "SIHKJ",    #SI Hanamkonda
+    "password": "sihk@654321",
+    "ip": "183.82.111.79",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIVNJ",    #SI Vizianagaram
+    "password": "sivn@654321",
+    "ip": "106.51.53.65",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SISCJ",    #SI Suchitra
+    "password": "sisc@5202",
+    "ip": "183.82.111.16",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIKPJ",    #SI Kukatpally
+    "password": "sikp@5202",
+    "ip": "183.82.1.179",
+    "port": "1810",
+    "channels": [101]
+},
+{
+    "username": "SIKPJ",    #SI Kukatpally
+    "password": "sikp@5202",
+    "ip": "183.82.1.179",
+    "port": "1880",
+    "channels": [101]
+},
+{
+    "username": "SIAPJ",    #SI Ameerpet
+    "password": "siap@654321",
+    "ip": "183.82.108.29",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIGBJ",    #Gachibowli
+    "password": "sigb@2024",
+    "ip": "183.82.113.163",
+    "port": "1810",
+    "channels": [101]
+},
+{
+    "username": "SIUPJ",    #Uppal
+    "password": "siup@5202",
+    "ip": "183.82.120.205",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIRMJ",    #SI Rajahmundry
+    "password": "sirm@654321",
+    "ip": "106.51.5.131",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "SIRMJ",    #SI Rajahmundry
+    "password": "sirm@654321",
+    "ip": "106.51.5.131",
+    "port": "10081",
+    "channels": [101]
+},
+{
+    "username": "RSAPJ",    #RS Ameerpet
+    "password": "rsap@5202",
+    "ip": "183.82.99.146",
+    "port": "1800",
+    "channels": [101]
+},
+{
+    "username": "RSAPJ",    #RS Ameerpet
+    "password": "rsap@5202",
+    "ip": "183.82.99.146",
+    "port": "1810",
+    "channels": [101]
+}
+
 ]
 
 # ==============================
