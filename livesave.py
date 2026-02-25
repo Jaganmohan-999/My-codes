@@ -7,7 +7,7 @@ from urllib.parse import quote
 # SETTINGS
 # ==============================
 
-RECORD_SECONDS = 300
+RECORD_SECONDS = 120
 OUTPUT_DIR = r"D:\RS_Videos\Videos"
 MAX_PARALLEL_RECORDINGS = 10  # limit simultaneous ffmpeg processes
 
@@ -23,136 +23,137 @@ STREAMS = [
     "password": "sipt@654321",
     "ip": "183.82.98.202",
     "port": "1800",
-    "channels": [101]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIKTPJ",   #SI Kothapet
     "password": "ktpjew@5202",
     "ip": "183.82.99.50",
     "port": "1800",
-    "channels": [601]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIKTPJ",   #SI Kothapet
     "password": "ktpjew@5202",
     "ip": "183.82.99.50",
     "port": "1810",
-    "channels": [201]
+    "channels": [1001, 101, 1101, 1701, 1801, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIMGJ",    #SI Madinaguda
     "password": "mgjew@654321",
     "ip": "183.82.114.243",
     "port": "1800",
-    "channels": [301]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "RSDNJ",    #RS Dilsukhnagar
     "password": "rsdn@654321",
     "ip": "183.82.99.55",
     "port": "1800",
-    "channels": [1001]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "RSCNJ",    #RS Chandanagar
     "password": "rscn@2024",
     "ip": "183.82.99.77",
     "port": "1810",
-    "channels": [1501]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "RSKPJ",    #RS Kukatpally
     "password": "rskp@2024",
     "ip": "183.82.99.76",
     "port": "1810",
-    "channels": [1101]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIHKJ",    #SI Hanamkonda
     "password": "sihk@654321",
     "ip": "183.82.111.79",
     "port": "1800",
-    "channels": [1401]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 1901, 2001, 201, 2101, 2201, 2301, 2401, 2501, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIVNJ",    #SI Vizianagaram
     "password": "sivn@654321",
     "ip": "106.51.53.65",
     "port": "1800",
-    "channels": [1201,1701]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 1901, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SISCJ",    #SI Suchitra
     "password": "sisc@5202",
     "ip": "183.82.111.16",
     "port": "1800",
-    "channels": [701]
+"channels": [1002, 102, 1102, 1202, 1302, 1402, 1502, 1602, 202, 302, 402, 502, 602, 702, 802, 902]
 },
 {
     "username": "SIKPJ",    #SI Kukatpally
     "password": "sikp@5202",
     "ip": "183.82.1.179",
     "port": "1810",
-    "channels": [1101]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIKPJ",    #SI Kukatpally
     "password": "sikp@5202",
     "ip": "183.82.1.179",
     "port": "1880",
-    "channels": [1401]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 1701, 1801, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIAPJ",    #SI Ameerpet
     "password": "siap@654321",
     "ip": "183.82.108.29",
     "port": "1800",
-    "channels": [1101]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIGBJ",    #Gachibowli
     "password": "sigb@2024",
     "ip": "183.82.113.163",
     "port": "1810",
-    "channels": [101,401]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIUPJ",    #Uppal
     "password": "siup@5202",
     "ip": "183.82.120.205",
     "port": "1800",
-    "channels": [1301]
+    "channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIRMJ",    #SI Rajahmundry
     "password": "sirm@654321",
     "ip": "106.51.5.131",
     "port": "1800",
-    "channels": [1301]
+    "channels": [1001, 1101, 1201, 1301, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "SIRMJ",    #SI Rajahmundry
     "password": "sirm@654321",
     "ip": "106.51.5.131",
     "port": "10081",
-    "channels": [901]
+    "channels": [1001, 101, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "RSAPJ",    #RS Ameerpet
     "password": "rsap@5202",
     "ip": "183.82.99.146",
     "port": "1800",
-    "channels": [101,1601]
+"channels": [1001, 101, 1101, 1201, 1301, 1401, 1501, 1601, 201, 301, 401, 501, 601, 701, 801, 901]
 },
 {
     "username": "RSAPJ",    #RS Ameerpet
     "password": "rsap@5202",
     "ip": "183.82.99.146",
     "port": "1810",
-    "channels": [101]
+    "channels": [101, 201, 302, 401]
 }
-
+ 
 ]
+ 
 
 # ==============================
 # RECORD FUNCTION
