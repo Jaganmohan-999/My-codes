@@ -2,6 +2,7 @@ import subprocess
 import os
 import concurrent.futures
 from urllib.parse import quote
+from datetime import datetime
 
 # ==============================
 # SETTINGS
@@ -167,9 +168,10 @@ def record_stream(stream_config, channel):
         port = stream_config["port"]
 
         rtsp_url = f"rtsp://{username}:{password}@{ip}:{port}/Streaming/Channels/{channel}"
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_file = os.path.join(
             OUTPUT_DIR,
-            f"{ip.replace('.', '_')}_cam{channel}.mp4"
+             f"{ip.replace('.', '_')}_cam{channel}_{timestamp}.mp4"
         )
 
         print(f"[INFO] Recording {rtsp_url}")
