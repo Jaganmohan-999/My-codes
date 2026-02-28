@@ -1,7 +1,7 @@
 import subprocess
 
 # 🔹 Put your RTSP URL here
-rtsp_url = "rtsp://SIVNJ:sivn@654321@106.51.53.65:1800/Streaming/Channels/1001"
+rtsp_url = "rtsp://admin:paramount123@192.168.0.37:554/Streaming/Channels/101"
 
 # Play the stream
 subprocess.run([
