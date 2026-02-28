@@ -3,7 +3,22 @@ from urllib.parse import urlparse, unquote
 
 # 🔹 Paste your RTSP URLs here
 rtsp_urls = [
-    
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1001",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/101",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1101",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1201",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1301",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1401",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1501",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/1601",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/201",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/301",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/401",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/501",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/601",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/701",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/801",
+    "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/901"
    
 ]
 
@@ -59,7 +74,9 @@ for index, rtsp_url in enumerate(rtsp_urls):
     cameras.append(camera_json)
 
 # 🔥 Save JSON file in same folder
-with open("cameras.json", "w") as f:
-    json.dump(cameras, f, indent=4)
+# with open("cameras.json", "w") as f:   # if needed to save in desired paht, update the path here
+print(json.dumps(cameras, indent=4))
 
-print("✅ cameras.json file created successfully.")
+    # json.dump(cameras, f, indent=4)
+
+# print("✅ cameras.json file created successfully.")
