@@ -1,12 +1,15 @@
 # ====== USER INPUT ======
 
-BASE_RTSP = "rtsp://SIKTPJ:ktpjew@5202@183.82.99.50:1810/Streaming/Channels/"
+BASE_RTSP = "rtsp://SIPTJ:sipt%40654321@183.82.98.202:1800/Streaming/Channels/"
 
 CHANNELS = [1001,
 101,
 1101,
-1701,
-1801,
+1201,
+1301,
+1401,
+1501,
+1601,
 201,
 301,
 401,
@@ -15,6 +18,7 @@ CHANNELS = [1001,
 701,
 801,
 901
+
 ]
 
 # =========================
