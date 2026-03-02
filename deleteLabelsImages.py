@@ -1,8 +1,8 @@
 import os
 
 # ====== SET YOUR PATHS ======
-images_dir = r"D:\RS_sorting\Phani -\183_82_1_179_cam1801\images" # Update this path to your images directory
-labels_dir = r"D:\RS_sorting\Phani -\183_82_1_179_cam1801\labels" # Update this path to your labels directory
+images_dir = r"D:\RS_sorting\Phani\infer1\183_82_111_79_cam2401123\images" # Update this path to your images directory
+labels_dir = r"D:\RS_sorting\Phani\infer1\183_82_111_79_cam2401123\labels" # Update this path to your labels directory
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
 
 # Build image dictionary
