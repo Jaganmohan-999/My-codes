@@ -2,7 +2,7 @@ import os
 
 # ====== SETTINGS ======
 root_directory = r"D:\RS_sorting\Phani\infer2"
-numbers_to_add = "963"   # <-- numbers you want to append
+numbers_to_add = "968"   # <-- numbers you want to append
 # ======================
 
 for folder_name in os.listdir(root_directory):

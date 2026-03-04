@@ -1,8 +1,8 @@
 import os
 
 # ====== SET YOUR PATHS ======
-images_dir = r"D:\RS_sorting\Phani\infer2\183_82_1_179_cam901_20260227_1851109603\images" # Update this path to your images directory
-labels_dir = r"D:\RS_sorting\Phani\infer2\183_82_1_179_cam901_20260227_1851109603\labels" # Update this path to your labels directory
+images_dir = r"D:\RS_sorting\Phani\RS_03-03-2026\images"
+labels_dir = r"D:\RS_sorting\Phani\RS_03-03-2026\labels"
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
 
 # Build image dictionary
@@ -12,13 +12,42 @@ for file in os.listdir(images_dir):
     if ext.lower() in image_extensions:
         image_files[name] = file
 
+# Build label dictionary
+label_files = {}
+for file in os.listdir(labels_dir):
+    if file.endswith(".txt"):
+        name = os.path.splitext(file)[0]
+        label_files[name] = file
+
 print("\nSelect Operation:")
 print("1 - Delete labels without images")
 print("2 - Delete empty (0KB) labels and their images")
 print("3 - Run both")
 print("4 - Preview only (no deletion)")
+print("5 - Show images without labels AND labels without images")
 
-choice = input("Enter your choice (1/2/3/4): ").strip()
+choice = input("Enter your choice (1/2/3/4/5): ").strip()
+
+# ===== OPTION 5: Only show mismatches =====
+if choice == "5":
+    print("\n===== IMAGES WITHOUT LABELS =====")
+    images_without_labels = 0
+    for name, img_file in image_files.items():
+        if name not in label_files:
+            print(img_file)
+            images_without_labels += 1
+
+    print("\n===== LABELS WITHOUT IMAGES =====")
+    labels_without_images = 0
+    for name, lbl_file in label_files.items():
+        if name not in image_files:
+            print(lbl_file)
+            labels_without_images += 1
+
+    print("\n===== SUMMARY =====")
+    print(f"Images without labels: {images_without_labels}")
+    print(f"Labels without images: {labels_without_images}")
+    exit()
 
 preview_mode = (choice == "4")
 run_missing = choice in ["1", "3", "4"]
