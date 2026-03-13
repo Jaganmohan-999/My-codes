@@ -3,10 +3,10 @@ import cv2
 from ultralytics import YOLO
 
 # ====== CONFIGURATION ======
-model_path = r"D:\New folder (2)\best.pt"               # Path to your trained model
-input_folder = r"D:\RS_Videos\input"        # Folder containing videos
-output_folder = r"D:\RS_Videos\output"      # Folder to save inferenced videos
-conf_threshold = 0.25                 # Confidence threshold
+model_path = r"D:\models_list\11n\6-4\best.pt"        # Path to your trained model
+input_folder = r"D:\RS_Videos\videos\RSKPHB"                   # Folder containing videos
+output_folder = r"D:\RS_Videos\videos\RSKPHB\out"             # Folder to save inferenced videos
+conf_threshold = 0.3                                # Confidence threshold
 # ============================
 
 # Create output folder if not exists

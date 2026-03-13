@@ -1,8 +1,8 @@
 import os
 
 # ====== SET YOUR PATHS ======
-images_dir = r"D:\RS_sorting\Phani\infer2\183_82_1_179_cam901_20260227_1851109603\images" # Update this path to your images directory
-labels_dir = r"D:\RS_sorting\Phani\infer2\183_82_1_179_cam901_20260227_1851109603\labels" # Update this path to your labels directory
+images_dir = r"E:\output\-183_82_99_146_cam801_20260311_124906\images"   # Update this path to your images directory
+labels_dir = r"E:\output\-183_82_99_146_cam801_20260311_124906\labels"    # Update this path to your labels directory
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
 
 # Build image dictionary
@@ -17,9 +17,11 @@ print("1 - Delete labels without images")
 print("2 - Delete empty (0KB) labels and their images")
 print("3 - Run both")
 print("4 - Preview only (no deletion)")
+print("5 - Delete images without labels")
 
-choice = input("Enter your choice (1/2/3/4): ").strip()
+choice = input("Enter your choice (1/2/3/4/5): ").strip()
 
+run_image_without_label = choice in ["5"]
 preview_mode = (choice == "4")
 run_missing = choice in ["1", "3", "4"]
 run_empty = choice in ["2", "3", "4"]
@@ -28,6 +30,20 @@ deleted_labels = 0
 deleted_images = 0
 
 for label_file in os.listdir(labels_dir):
+
+    # ===== Option 5: Images without labels =====
+    if run_image_without_label:
+        for image_name, image_file in image_files.items():
+            label_path = os.path.join(labels_dir, image_name + ".txt")
+            image_path = os.path.join(images_dir, image_file)
+            if not os.path.exists(label_path):
+                if preview_mode:
+                    print(f"[PREVIEW] Would delete image (no label): {image_file}")
+                else:
+                    os.remove(image_path)
+                    deleted_images += 1
+                    print(f"Deleted image (no label): {image_file}")
+
     if not label_file.endswith(".txt"):
         continue
 

@@ -1,49 +1,40 @@
 import os
 
-# ====== SETTINGS ======
-root_directory = r"D:\RS_sorting\Phani\infer2"
-numbers_to_add = "968"   # <-- numbers you want to append
-# ======================
+main_path = r"D:\Training_RS\Train"
+append_string = "q"
 
-for folder_name in os.listdir(root_directory):
+image_exts = [".jpg", ".jpeg", ".png", ".bmp", ".tif"]
 
-    old_folder_path = os.path.join(root_directory, folder_name)
+for root, dirs, files in os.walk(main_path):
 
-    if not os.path.isdir(old_folder_path):
-        continue
+    if os.path.basename(root) == "images":
 
-    # New folder name
-    new_folder_name = folder_name + numbers_to_add
-    new_folder_path = os.path.join(root_directory, new_folder_name)
+        folder_name = os.path.basename(os.path.dirname(root))
+        labels_folder = os.path.join(os.path.dirname(root), "labels")
 
-    print(f"\nRenaming folder:")
-    print(f"{folder_name}  ->  {new_folder_name}")
+        for f in files:
 
-    # Rename outer folder first
-    os.rename(old_folder_path, new_folder_path)
+            name, ext = os.path.splitext(f)
 
-    # Now rename inside files
-    for subfolder in ["images", "labels"]:
-        subfolder_path = os.path.join(new_folder_path, subfolder)
-
-        if not os.path.exists(subfolder_path):
-            continue
-
-        for filename in os.listdir(subfolder_path):
-
-            old_file_path = os.path.join(subfolder_path, filename)
-
-            if not os.path.isfile(old_file_path):
+            if ext.lower() not in image_exts:
                 continue
 
-            name, ext = os.path.splitext(filename)
-            counter = name.split("_")[-1]
+            # make globally unique name
+            new_base = f"{name}_{folder_name}"
 
-            new_filename = f"{new_folder_name}_{counter}{ext}"
-            new_file_path = os.path.join(subfolder_path, new_filename)
+            # append user string
+            final_base = new_base + append_string
 
-            os.rename(old_file_path, new_file_path)
+            old_img = os.path.join(root, f)
+            new_img = os.path.join(root, final_base + ext)
 
-            print(f"  {filename} -> {new_filename}")
+            os.rename(old_img, new_img)
 
-print("\n✅ All folders and files updated successfully.")
+            # rename label
+            old_label = os.path.join(labels_folder, name + ".txt")
+            new_label = os.path.join(labels_folder, final_base + ".txt")
+
+            if os.path.exists(old_label):
+                os.rename(old_label, new_label)
+
+print("Finished renaming.")
