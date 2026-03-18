@@ -1,7 +1,7 @@
 import subprocess
 
 # 🔹 Put your RTSP URL here
-rtsp_url = "rtsp://SIRMJ:sirm%40654321@106.51.5.131:10081/Streaming/Channels/301"
+rtsp_url = "rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/201"
             
 
 
