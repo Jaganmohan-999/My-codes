@@ -5,9 +5,9 @@ import time
 from datetime import datetime
 
 # ================= CONFIG =================
-rtsp_url = "rtsp://SIKTPJ:ktpjew%405202@183.82.99.50:1810/Streaming/Channels/201"  # Change to your RTSP URL
-OUTPUT_FOLDER = r"D:\RS_Videos\videos\RSKPHB"
-RECORD_SECONDS = 180
+rtsp_url = "rtsp://admin:admin123@124.123.25.174:1554/cam/realmonitor?channel=1&subtype=0"  # Change to your RTSP URL
+OUTPUT_FOLDER = r"D:\RS_Videos\videos"
+RECORD_SECONDS = 600
 # ==========================================
 
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
