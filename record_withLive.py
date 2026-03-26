@@ -5,8 +5,8 @@ import time
 from datetime import datetime
 
 # ================= CONFIG =================
-rtsp_url = "rtsp://admin:admin123@103.165.14.78:1555/cam/realmonitor?channel=1&subtype=0"  # Change to your RTSP URL
-OUTPUT_FOLDER = r"D:\RS_Videos\videos"
+rtsp_url = "rtsp://admin:paramount123@192.168.0.35:554/Streaming/Channels/101"  # Change to your RTSP URL
+OUTPUT_FOLDER = r"D:\RS_Videos\paramount"
 RECORD_SECONDS = 600
 # ==========================================
 

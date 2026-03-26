@@ -1,41 +1,98 @@
 import os
 import json
+import csv
 import cv2
+from urllib.parse import urlparse
 
-# Path to JSON file
-json_file = r"D:\RS_json\SI_Kothapet.json"
-
-# Output folder
-output_folder = r"D:\RS_frames\New folder"
+# -------- SETTINGS --------
+input_file = r"C:\Users\phani\Desktop\footfall.txt"  # change to .json / .csv / .txt
+output_folder = r"D:\RTSP_Snapshots/RS_ALL"  # folder to save snapshots
 os.makedirs(output_folder, exist_ok=True)
 
-# Load JSON list
-with open(json_file, "r") as f:
-    cameras = json.load(f)
 
-for cam in cameras:
-    rtsp_url = cam.get("rtspUrl")
-    camera_number = cam.get("cameraNumber")
+# -------- FUNCTION: Extract RTSP URLs --------
+def load_rtsp_urls(file_path):
+    ext = os.path.splitext(file_path)[1].lower()
+    urls = []
 
-    if not rtsp_url or not camera_number:
-        print(f"Skipping invalid entry: {cam}")
-        continue
+    if ext == ".json":
+        with open(file_path, "r") as f:
+            data = json.load(f)
+            for item in data:
+                if isinstance(item, dict):
+                    url = item.get("rtspUrl") or item.get("url")
+                    if url:
+                        urls.append(url)
 
-    print(f"Connecting to camera {camera_number}...")
+    elif ext == ".csv":
+        with open(file_path, newline="") as f:
+            reader = csv.reader(f)
+            for row in reader:
+                for col in row:
+                    if col.startswith("rtsp://"):
+                        urls.append(col)
+
+    elif ext == ".txt":
+        with open(file_path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("rtsp://"):
+                    urls.append(line)
+
+    return urls
+
+
+# -------- FUNCTION: Parse RTSP URL --------
+def parse_rtsp(rtsp_url):
+    try:
+        parsed = urlparse(rtsp_url)
+
+        # username
+        username = parsed.username or "user"
+
+        # port
+        port = parsed.port or "554"
+
+        # channel (last number in path or query)
+        path = parsed.path
+        channel = "ch"
+
+        # try extracting number from path
+        parts = path.split("/")
+        for p in reversed(parts):
+            if p.isdigit():
+                channel = p
+                break
+
+        return f"{username}_{port}_{channel}"
+
+    except:
+        return "unknown_name"
+
+
+# -------- MAIN --------
+rtsp_urls = load_rtsp_urls(input_file)
+
+for rtsp_url in rtsp_urls:
+    print(f"Connecting: {rtsp_url}")
 
     cap = cv2.VideoCapture(rtsp_url)
 
     if not cap.isOpened():
-        print(f"Failed to connect: {camera_number}")
+        print("Failed to connect")
         continue
 
     ret, frame = cap.read()
 
     if ret:
-        output_path = os.path.join(output_folder, f"{camera_number}.jpg")
+        filename = parse_rtsp(rtsp_url) + ".jpg"
+        output_path = os.path.join(output_folder, filename)
+
         cv2.imwrite(output_path, frame)
-        print(f"Saved snapshot: {output_path}")
+        print(f"Saved: {output_path}")
     else:
-        print(f"Failed to capture frame: {camera_number}")
+        print("Failed to capture frame")
 
     cap.release()
+
+print("Done!")

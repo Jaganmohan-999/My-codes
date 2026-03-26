@@ -1,8 +1,8 @@
 import os
 
 # ====== SET YOUR PATHS ======
-images_dir = r"E:\output\-183_82_99_146_cam801_20260311_124906\images"   # Update this path to your images directory
-labels_dir = r"E:\output\-183_82_99_146_cam801_20260311_124906\labels"    # Update this path to your labels directory
+images_dir = r"D:\Training_RS\RS\images"   # Update this path to your images directory
+labels_dir = r"D:\Training_RS\RS\labels"    # Update this path to your labels directory
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
 
 # Build image dictionary
