@@ -7,7 +7,7 @@ import time
 # CONFIG
 # -----------------------------
 
-RTSP_URL = r"rtsp://SIUPJ:siup%405202@183.82.120.205:1800/Streaming/Channels/101"
+RTSP_URL = r"rtsp://admin:paramount123@192.168.0.37:554/Streaming/Channels/101"
 MODEL_PATH = r"D:\models_list\rs\6\best.pt"
 DISPLAY_WIDTH = 1280
 DISPLAY_HEIGHT = 720

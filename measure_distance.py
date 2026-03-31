@@ -2,7 +2,7 @@ import cv2
 import math
 
 # Load image
-image = cv2.imread(r"D:\Usecases\silver_ornaments_customer_unattended_1773383062639.jpg")
+image = cv2.imread(r"D:\RS_Videos\camera_15_customer_unattended_1774710486796.jpg")
 clone = image.copy()
 
 points = []
