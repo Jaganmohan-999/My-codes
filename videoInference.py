@@ -3,8 +3,8 @@ import cv2
 from ultralytics import YOLO
 
 # ====== CONFIGURATION ======
-model_path = r"D:\models_list\rs\8\best.pt"       # Path to your trained model
-input_folder = r"D:\RS_Videos\paramount"                  # Folder containing videos
+model_path = r"D:\models_list\rs\9\best.pt"      # Path to your trained model
+input_folder = r"D:\RS_Videos\paramount"                 # Folder containing videos
 output_folder = r"D:\RS_Videos\paramount\inference"             # Folder to save inferenced videos
 conf_threshold = 0.3                                # Confidence threshold
 # ============================
