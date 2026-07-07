@@ -3,9 +3,9 @@ import cv2
 from ultralytics import YOLO
 
 # ====== CONFIGURATION ======
-model_path = r"D:\models_list\rs\9\best.pt"      # Path to your trained model
-input_folder = r"D:\RS_Videos\paramount"                 # Folder containing videos
-output_folder = r"D:\RS_Videos\paramount\inference"             # Folder to save inferenced videos
+model_path = r'/Users/tp-01/Documents/models/CBT/best14.pt'      # Path to your trained model
+input_folder = r"/Users/tp-01/Documents/Annotation/autoannotation"                 # Folder containing videos
+output_folder = r"/Users/tp-01/Documents/Annotation/autoannotation"             # Folder to save inferenced videos
 conf_threshold = 0.3                                # Confidence threshold
 # ============================
 
@@ -14,6 +14,7 @@ os.makedirs(output_folder, exist_ok=True)
 
 # Load YOLO model
 model = YOLO(model_path)
+print(model.names)
 
 # Supported video formats
 video_extensions = (".mp4", ".avi", ".mov", ".mkv")

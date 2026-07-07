@@ -8,20 +8,7 @@ from datetime import datetime
 # ==========================
 
 RTSP_URLS = [
-"rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/901",
-"rtsp://SIUPJ:siup%405202@183.82.120.205:1800/Streaming/Channels/1001",
-"rtsp://SISCJ:sisc%405202@183.82.111.16:1800/Streaming/Channels/102",
-"rtsp://SISCJ:sisc%405202@183.82.111.16:1800/Streaming/Channels/702",
-"rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/201",
-"rtsp://SIVNJ:sivn%40654321@106.51.53.65:1800/Streaming/Channels/301",
-"rtsp://SIKTPJ:ktpjew%405202@183.82.99.50:1810/Streaming/Channels/101",
-"rtsp://RSKPJ:rskp%402024@183.82.99.76:1810/Streaming/Channels/1201",
-"rtsp://RSAPJ:rsap%405202@183.82.99.146:1800/Streaming/Channels/1001",
-"rtsp://RSKPJ:rskp%402024@183.82.99.76:1810/Streaming/Channels/101",
-"rtsp://SIHKJ:sihk%40654321@183.82.111.79:1800/Streaming/Channels/2501",
-"rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/1201",
-"rtsp://SIHKJ:sihk%40654321@183.82.111.79:1800/Streaming/Channels/1201",
-"rtsp://RSKPJ:rskp%402024@183.82.99.76:1810/Streaming/Channels/1501"
+"rtsp://SIHKJ:sihk%40654321@183.82.111.79:1800/Streaming/Channels/401"
 
 
 ]

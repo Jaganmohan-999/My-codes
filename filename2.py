@@ -1,6 +1,6 @@
 import os
 
-main_path = r"D:\Training_RS\rsb kf\rsb kf"
+main_path = r"/Users/tp-01/Downloads/coco_fire_test/coco_ai_set"
 image_exts = [".jpg", ".jpeg", ".png", ".bmp", ".tif"]
 
 for folder in os.listdir(main_path):

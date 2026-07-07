@@ -21,7 +21,7 @@ except ImportError:
     sys.exit(1)
  
 # Settings matching your main.py
-KAFKA_BROKERS = "91.203.133.191:9092"
+KAFKA_BROKERS = "164.52.193.23:9092"
 KAFKA_TOPIC = "frames.raw"
 # Use a dynamic group ID to always get latest messages (don't resume old offsets)
 GROUP_ID = "debug-viewer-" + str(int(time.time()))

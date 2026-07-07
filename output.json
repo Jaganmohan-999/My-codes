@@ -1,0 +1,98 @@
+[
+  {
+    "branch_id": "5a4a5e89-3962-4142-88db-5e5b43a91f6c",
+    "camera_number": null,
+    "camera_ip": "183.82.99.76",
+    "username": "RSKPJ"
+  },
+  {
+    "branch_id": "f475f61a-2abc-45d9-95e6-8dd2042d23cd",
+    "camera_number": "RSSIAMPTCAM002",
+    "camera_ip": "183.82.108.29",
+    "username": "SIAPJ"
+  },
+  {
+    "branch_id": "3a67d12f-2423-4c8c-b447-d6708de368b8",
+    "camera_number": "RSSIHNMKCAM001",
+    "camera_ip": "183.82.111.79",
+    "username": "SIHKJ"
+  },
+  {
+    "branch_id": "f4578844-c266-4702-b2fc-ffbff2095f7f",
+    "camera_number": "RSSIVZNGCAM001",
+    "camera_ip": "106.51.53.65",
+    "username": "SIVNJ"
+  },
+  {
+    "branch_id": "9100551e-b401-4ae1-8ac1-940a76415925",
+    "camera_number": "RSSIRJYCAM001",
+    "camera_ip": "106.51.5.131",
+    "username": "SIRMJ"
+  },
+  {
+    "branch_id": "1f1f0fa3-425c-40ae-97e1-041fe9b9cc5a",
+    "camera_number": "BNANANTAPUR2002",
+    "camera_ip": "117.192.40.96",
+    "username": "admin"
+  },
+  {
+    "branch_id": "8dab4269-a5c8-44a5-a206-d291b1dde691",
+    "camera_number": "BNANANTAPUR3002",
+    "camera_ip": "117.192.40.101",
+    "username": "admin"
+  },
+  {
+    "branch_id": "8fda0b08-2e27-425a-b9ce-d30f862d6f46",
+    "camera_number": "BNARMOOR002",
+    "camera_ip": "43.239.200.136",
+    "username": "admin"
+  },
+  {
+    "branch_id": "a958d94b-8060-4ad9-9ec0-4b06b027d7c0",
+    "camera_number": "BNADDANKI001",
+    "camera_ip": "103.165.14.78",
+    "username": "admin"
+  },
+  {
+    "branch_id": "bbb6c061-9304-4c67-8e78-573213f48497",
+    "camera_number": "BNADILABAD001",
+    "camera_ip": "103.41.97.109",
+    "username": "admin"
+  },
+  {
+    "branch_id": "70af9963-a980-4332-bafb-5fc086822a51",
+    "camera_number": "BNADONI001",
+    "camera_ip": "154.210.236.21",
+    "username": "admin"
+  },
+  {
+    "branch_id": "f7ca58d1-00cb-4c5c-934f-3f0c2c5f16ec",
+    "camera_number": "BMNELLOREPLAZA001",
+    "camera_ip": "103.90.158.250",
+    "username": "admin"
+  },
+  {
+    "branch_id": "ec96cd76-15e2-43ba-8b0b-0e4744f6cfd4",
+    "camera_number": "BNAMALAPURAM002",
+    "camera_ip": "103.106.181.82",
+    "username": "admin"
+  },
+  {
+    "branch_id": "d86b4bfa-7a3a-47e5-8de3-b13992367c0d",
+    "camera_number": "BNGODAVARIKHANI001",
+    "camera_ip": "103.224.155.50",
+    "username": "admin"
+  },
+  {
+    "branch_id": "00d3f9c9-b6e8-4cd3-9dbb-6d84427a7da6",
+    "camera_number": "BNMADAPUR002",
+    "camera_ip": "183.82.115.38",
+    "username": "admin"
+  },
+  {
+    "branch_id": "f43a1b0e-d4f5-448d-8578-bac8c5a6d5d1",
+    "camera_number": "BNNELLORE5001",
+    "camera_ip": "103.90.156.253",
+    "username": "admin"
+  }
+]
