@@ -146,14 +146,13 @@ def preview_and_select(video_path):
 # --------------------------
 # Input / Output paths
 # --------------------------
-input_path = "/Users/tp-01/Documents/Record_Mobile/record_20260701_180642.mp4"
-
-output_folder = "/Volumes/HARDDISK_2/CBT_DATA/annot/"
+input_path = "/Users/tp-01/Documents/Producer_TensorRT/test/eight.mp4"
+output_folder = "/Users/tp-01/Documents/Producer_TensorRT/test"
 os.makedirs(output_folder, exist_ok=True)
 
 output_path = os.path.join(
     output_folder,
-    "NVR_ch5_main_20260610160002_20260610170001_2.mp4"
+    "footfall2.mp4"
 )
 
 

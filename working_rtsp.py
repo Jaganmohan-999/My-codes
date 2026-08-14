@@ -1,7 +1,7 @@
 import cv2
 
 # 🔹 Base RTSP URL
-base_rtsp = "rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/{}"
+base_rtsp = "rtsp://RSDNJEW:rsdn@2026@183.82.99.55:1800/Streaming/Channels/{}"
 
 start_channel = 101
 end_channel = 3201
