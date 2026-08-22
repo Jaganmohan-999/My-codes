@@ -7,23 +7,25 @@ from urllib.parse import urlparse
 
 # ================= CONFIG =================
 INPUT_FILE = r""   # optional (txt/csv/json/xlsx). Leave empty if using DIRECT_URLS
-OUTPUT_FOLDER = r"/Users/tp-01/Documents/VS_outputs/Sample_frames/RS_Frisk"
+OUTPUT_FOLDER = r"/Users/tp-01/Documents/VS_outputs/Sample_frames/RS_Footfall"
 DIRECT_URLS = [
-"rtsp://RSKPJ:rskp%402024@183.82.99.76:1810/Streaming/Channels/101",
-"rtsp://SIAPJ:siap%405202@183.82.108.29:1800/Streaming/Channels/101",
-"rtsp://SIPTJ:sipt%405202@183.82.98.202:1800/Streaming/Channels/101",
-"rtsp://SIKTPJ:ktpjew%405202@183.82.99.50:1810/Streaming/Channels/102",
-"rtsp://SIMGJ:mgjew%40654321@183.82.114.243:1800/Streaming/Channels/401",
-"rtsp://RSDNJ:rsdn%40654321@183.82.99.55:1800/Streaming/Channels/102",
-"rtsp://RSCNJ:rscn%402024@183.82.99.77:1810/Streaming/Channels/702",
-"rtsp://SIHKJ:sihk%40654321@122.169.205.20:1800/Streaming/Channels/102",
-"rtsp://SIVNJ:sivn%40654321@106.51.53.65:1800/Streaming/Channels/1201",
-"rtsp://SISCJ:sisc%405202@183.82.111.16:1800/Streaming/Channels/101",
-"rtsp://SIKPJ:sikp%405202@183.82.1.179:1880/Streaming/Channels/502",
-"rtsp://SIGBJ:sigb%402024@183.82.113.163:1810/Streaming/Channels/102",
-"rtsp://SIUPJ:siup%405202@183.82.120.205:1800/Streaming/Channels/101",
-"rtsp://SIRMJ:sirm%40654321@106.51.5.131:10081/Streaming/Channels/301",
-"rtsp://RSAPJ:rsap%405202@183.82.99.146:1800/Streaming/Channels/1101"
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=1&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=2&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=3&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=4&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=5&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=6&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=7&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=8&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=9&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=10&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=11&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=12&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=13&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=14&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=15&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=16&subtype=0",
+"rtsp://NZMSTORE:Nzm@2026@136.232.229.178:3002/cam/realmonitor?channel=17&subtype=0"
 ]
 # ==========================================
 

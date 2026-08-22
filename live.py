@@ -1,7 +1,7 @@
 import subprocess
 
 # 🔹 Put your RTSP URL here
-rtsp_url = "rtsp://admin:admin123@136.232.229.178:3008/cam/realmonitor?channel=3&subtype=0"
+rtsp_url = "rtsp://admin:paramount@555@183.82.105.189:554/Streaming/Channels/1201"
 
             
 # Play the stream

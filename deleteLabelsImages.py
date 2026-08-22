@@ -1,8 +1,8 @@
 import os
 
 # ====== SET YOUR PATHS ======
-images_dir = r"/Users/tp-01/Documents/Annotation/to_train/images"  # Update this path to your images directory
-labels_dir = r"/Users/tp-01/Documents/Annotation/to_train/labels"  # Update this path to your labels directory
+images_dir = r"/Users/tp-01/Documents/CMR/Out/images"  # Update this path to your images directory
+labels_dir = r"/Users/tp-01/Documents/CMR/Out/labels"  # Update this path to your labels directory
 image_extensions = [".jpg", ".jpeg", ".png", ".bmp"]
 
 # Build image dictionary

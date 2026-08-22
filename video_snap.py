@@ -4,9 +4,9 @@ import cv2
 # ==========================
 # CONFIG
 # ==========================
-INPUT_VIDEO = r"/Users/tp-01/Downloads/customer_unattended/vlc-record-2026-08-10-17h03m50s-rtsp___192.168.0.38_554_Streaming_Channels_101-.mp4"
+INPUT_VIDEO = r"/Users/tp-01/Downloads/WhatsApp Video 2026-08-21 at 7.16.21 PM.mp4"
 
-OUTPUT_IMAGE = r"/Users/tp-01/Documents/Images/snapshots_cameras/RSSIVZNGCAM003.jpg"
+OUTPUT_IMAGE = r"/Users/tp-01/Downloads/mobile/FIFTHFLOOR-1.jpg"
 # ==========================
 
 
